@@ -81,8 +81,7 @@ public class HelloController {
             map.put((String) head,infoMap.get(confGenMap.get(head)));
             res.add(map);
         });
-        System.out.println(JSON.toJSONString(res));
-        return "";
+        return JSON.toJSONString(res);
     }
 
     public static Date fromLocalDate(LocalDate date) {
